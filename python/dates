@@ -1,0 +1,11 @@
+birth_dates = {"Moses": 1801, "Jones": 1901: "Toby": 2001}
+nineteenth_count = 0
+twentieth_count = 0
+for person, year in birth_dates.items():
+  if year>=1800 and year <1900:
+    nineteenth_count +=1
+  elif year>1900:
+    twentieth_count +=1
+
+print("There are " + str(nineteenth_count) + "nineteenth century birth(s), "
+    + str(twentieth_count) + "twentieth century birth(s).")
